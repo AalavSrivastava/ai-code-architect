@@ -1,0 +1,23 @@
+ai-code-architect/
+├─ agents.py
+├─ tools.py
+├─ memory.py
+├─ main.py
+├─ README.md
+├─ demo_input.txt
+├─ backend/
+│ ├─ app/
+│ │ ├─ main.py
+│ │ ├─ api/
+│ │ │ └─ routes.py
+│ │ └─ models.py
+│ └─ requirements.txt
+├─ frontend/
+│ ├─ package.json
+│ ├─ src/
+
+│ │ ├─ App.jsx
+│ │ └─ index.jsx
+│ └─ public/
+│ └─ index.html
+└─ README.md
