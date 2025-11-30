@@ -1,34 +1,15 @@
 # AI Code Architect & Project Builder
-
-A multi-agent system that transforms a plain-English idea into a fully scaffolded full-stack project (React frontend + FastAPI backend), using tools, memory, long-running tasks, observability, and A2A communication.
-
-This project was built for the **2025 Kaggle × Google AI Intensive Capstone** (Freestyle Track).
-
----
-
-## 🚀 Features
-
-### ✔ Multi-Agent System  
-- Requirements Agent  
-- Architecture Agent  
-- Code Generator Agent  
-- Reviewer Agent  
-
-### ✔ Tools  
-- File Writer Tool (MCP-like)  
-- JSON Validator  
-- Linter Tool  
-- Code Execution Stub  
-
-### ✔ AI/Agent Concepts Demonstrated  
-- Multi-agent reasoning  
-- Tools (MCP / custom)  
-- Sessions & Memory  
-- Long-running operations  
-- Observability (logging)  
-- A2A Protocol  
-- Optional Cloud Run deployment  
-
----
-
-## 📦 Repository Structure
+This repository contains a demo implementation of a multi-agent system that 
+generates a full-stack project (React + FastAPI) from a plain-English idea.
+## Features
+- Multi-agent workflow (Requirements → Architecture → CodeGen → Reviewer)
+- Tools: File writer, JSON validator, linter stub, code exec stub
+- Memory: simple MemoryBank to persist preferences
+- Long-running generation simulated with sleeps and chunked writes
+- Observability via logging
+## How to run
+1. `python main.py "Build a todo app with FastAPI and React"`
+2. Inspect `generated_project/` for created files.
+## Notes
+Replace stubbed tools with ADK tool wrappers and configure Gemini in a 
+production version. Do NOT add API keys to the repo.
